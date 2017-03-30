@@ -9,7 +9,6 @@ TwitterのユーザIDを指定 → 解析 → 4つのpngを作成
 * ツイート単語ネガポジ(emotion.png)  
   
   
-  
 ### blockBreakOriginal
 所謂ブロック崩し  
 バー操作はウインドウ上でマウスを動かすことで行う  
@@ -17,7 +16,6 @@ TwitterのユーザIDを指定 → 解析 → 4つのpngを作成
 ブロック破壊の難易度は5段階（5回当てるとブロックが消える）  
 ゲームオーバーまたはゲームクリアのときに「Press Mouse to restart!」の案内が出現、  
 マウスボタンをクリックすることでまたゲームが開始される  
-  
   
   
 ### interactiveGameOriginal
