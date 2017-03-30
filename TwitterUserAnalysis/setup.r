@@ -1,7 +1,11 @@
+#作業ディレクトリの設定
 setwd("~/Desktop/TwitterUserAnalysis")
 
+#RでTwitterAPIを使用した解析を行うためのライブラリを読み込む
 library(twitteR)
 library(ROAuth)
+
+#認証処理
 consumerKey <- "dbETnsOE5gBlfJjnAcNphucdv"
 consumerSecret <- "VvunMWZl5qiG8i6VINm8ewaEncEH8XsaTkt958Jjhu1o29RKdx"
 accessToken <- "2828699870-qBlWT5fBb5JeK5JJWjzLygWg5LKDy5YpmIiCnpv"
