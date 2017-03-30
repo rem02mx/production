@@ -1,5 +1,6 @@
 #TwitterAPIを使用するための準備
-source('~/Desktop/TwitterUserAnalysis/setup.R')
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードsetup.rを起動)
+source('~/Desktop/TwitterUserAnalysis/setup.r')
 
 #手打ち
 #ツイートを読み込みデータ化する
@@ -10,22 +11,27 @@ userID <- "pyyyming"
 tldata <- userTimeline(userID,n=1000,maxID=NULL,sinceID=NULL,includeRts=FALSE,excludeReplies=FALSE)
 
 #読み込んだツイートをRのデータとして書き出し
-sink( file = "tweetData.R" )
+sink( file = "tweetData.r" )
 tldata
 sink()
 #手打ちここまで
 
 #読み込んだツイートデータの下処理
-source("~/Desktop/TwitterUserAnalysis/twiR.R")
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードtwiR.rを起動)
+source("~/Desktop/TwitterUserAnalysis/twiR.r")
 
 #ランキング, グラフ作成
-source("~/Desktop/TwitterUserAnalysis/twiRanks.R")
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードtwiRanks.rを起動)
+source("~/Desktop/TwitterUserAnalysis/twiRanks.r")
 
 #クラスター分析, グラフ作成
-source("~/Desktop/TwitterUserAnalysis/cluster.R")
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードcluster.rを起動)
+source("~/Desktop/TwitterUserAnalysis/cluster.r")
 
 #ワードクラウド作成
-source("~/Desktop/TwitterUserAnalysis/twiClouds.R")
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードtwiClouds.rを起動)
+source("~/Desktop/TwitterUserAnalysis/twiClouds.r")
 
 #ネガポジ判定, グラフ作成
-source("~/Desktop/TwitterUserAnalysis/negpoj.R")
+#(DesktopのTwitterUserAnalysisというフォルダ内に格納されたソースコードnegpoj.rを起動)
+source("~/Desktop/TwitterUserAnalysis/negpoj.r")
