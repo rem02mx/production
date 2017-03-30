@@ -7,8 +7,23 @@ TwitterのユーザIDを指定 → 解析 → 4つのpngを作成
 * クラスター分析(cluster.png)  
 * ワードクラウド(cloud.png)  
 * ツイート単語ネガポジ(emotion.png)  
+##### 動かし方
+*Rの実行環境が整っていることを前提とする*
+1. DesktopにTwitterUserAnalysisというフォルダを生成
+2. TwitterUserAnalysisに以下を格納
+  * setup.r
+  * twiR.r
+  * twiRanks.r
+  * cluster.r
+  * twiClouds.r
+  * negpoj.r
+  * Exclude.txt
+  * cacert.pem
+  * new authentication.Rdata
+  * source.r
+3. source.rを上から順に実行  
   
-  
+
 ### blockBreakOriginal
 所謂ブロック崩し  
 バー操作はウインドウ上でマウスを動かすことで行う  
