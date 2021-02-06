@@ -10,6 +10,11 @@ userID <- "pyyyming"
 #ツイート読み込み
 tldata <- userTimeline(userID,n=1000,maxID=NULL,sinceID=NULL,includeRts=FALSE,excludeReplies=FALSE)
 
+#ツイートの初期処理
+exts <- sapply(tldata, statusText)
+texts %<>% str_replace_all(“\\p{ASCII}”, “”)
+texts <- texts[!is.na(texts)]
+
 #読み込んだツイートをRのデータとして書き出し
 sink( file = "tweetData.r" )
 tldata
